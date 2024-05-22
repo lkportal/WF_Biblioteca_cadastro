@@ -1,0 +1,11 @@
+D:\Documentos\Projetos Geral\Cadastro_bliblioteca\bliblioteca\bin\Debug\bliblioteca.exe.config
+D:\Documentos\Projetos Geral\Cadastro_bliblioteca\bliblioteca\bin\Debug\bliblioteca.exe
+D:\Documentos\Projetos Geral\Cadastro_bliblioteca\bliblioteca\bin\Debug\bliblioteca.pdb
+D:\Documentos\Projetos Geral\Cadastro_bliblioteca\bliblioteca\obj\Debug\bliblioteca.csproj.AssemblyReference.cache
+D:\Documentos\Projetos Geral\Cadastro_bliblioteca\bliblioteca\obj\Debug\bliblioteca.Form1.resources
+D:\Documentos\Projetos Geral\Cadastro_bliblioteca\bliblioteca\obj\Debug\bliblioteca.Properties.Resources.resources
+D:\Documentos\Projetos Geral\Cadastro_bliblioteca\bliblioteca\obj\Debug\bliblioteca.csproj.GenerateResource.cache
+D:\Documentos\Projetos Geral\Cadastro_bliblioteca\bliblioteca\obj\Debug\bliblioteca.csproj.CoreCompileInputs.cache
+D:\Documentos\Projetos Geral\Cadastro_bliblioteca\bliblioteca\obj\Debug\bliblioteca.exe
+D:\Documentos\Projetos Geral\Cadastro_bliblioteca\bliblioteca\obj\Debug\bliblioteca.pdb
+D:\Documentos\Projetos Geral\Cadastro_bliblioteca\bliblioteca\obj\Debug\bliblioteca.view.Funcionario.resources
