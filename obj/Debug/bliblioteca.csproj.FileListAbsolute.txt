@@ -9,3 +9,5 @@ D:\Documentos\Projetos Geral\Cadastro_bliblioteca\bliblioteca\obj\Debug\blibliot
 D:\Documentos\Projetos Geral\Cadastro_bliblioteca\bliblioteca\obj\Debug\bliblioteca.exe
 D:\Documentos\Projetos Geral\Cadastro_bliblioteca\bliblioteca\obj\Debug\bliblioteca.pdb
 D:\Documentos\Projetos Geral\Cadastro_bliblioteca\bliblioteca\obj\Debug\bliblioteca.view.Funcionario.resources
+D:\Documentos\Projetos Geral\Cadastro_bliblioteca\bliblioteca\obj\Debug\bliblioteca.view.CadastroCliente.resources
+D:\Documentos\Projetos Geral\Cadastro_bliblioteca\bliblioteca\obj\Debug\bliblioteca.view.Cliente.resources
