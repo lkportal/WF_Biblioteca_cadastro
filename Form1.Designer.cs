@@ -92,6 +92,7 @@
             this.txtRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRegistro.Location = new System.Drawing.Point(108, 198);
             this.txtRegistro.Name = "txtRegistro";
+            this.txtRegistro.PasswordChar = '*';
             this.txtRegistro.Size = new System.Drawing.Size(224, 31);
             this.txtRegistro.TabIndex = 4;
             // 
@@ -154,7 +155,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(610, 276);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 38);
+            this.button1.Size = new System.Drawing.Size(110, 38);
             this.button1.TabIndex = 12;
             this.button1.Text = "Cadastrar";
             this.button1.UseVisualStyleBackColor = true;

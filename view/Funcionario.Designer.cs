@@ -24,18 +24,18 @@
         /// </summary>
         private void InitializeComponent() {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNomeLivro = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtEditora = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtQuaPaginas = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboGenero = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtAutor = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtQuaLivros = new System.Windows.Forms.TextBox();
             this.btnCadastrarLivro = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,9 +43,10 @@
             this.preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Editora = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.txtPreco = new System.Windows.Forms.TextBox();
             this.btnMostraLivros = new System.Windows.Forms.Button();
+            this.labelNome = new System.Windows.Forms.Label();
+            this.labelVoltar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,13 +60,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastrar Livro";
             // 
-            // textBox1
+            // txtNomeLivro
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(13, 102);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(290, 26);
-            this.textBox1.TabIndex = 1;
+            this.txtNomeLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomeLivro.Location = new System.Drawing.Point(13, 102);
+            this.txtNomeLivro.Name = "txtNomeLivro";
+            this.txtNomeLivro.Size = new System.Drawing.Size(290, 26);
+            this.txtNomeLivro.TabIndex = 1;
             // 
             // label2
             // 
@@ -101,19 +102,19 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(12, 183);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(171, 20);
+            this.label4.Size = new System.Drawing.Size(180, 20);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Quantidade Paginas";
+            this.label4.Text = "Quantidades Paginas";
             // 
-            // textBox2
+            // txtQuaPaginas
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox2.Location = new System.Drawing.Point(13, 206);
-            this.textBox2.MaxLength = 1000;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(290, 26);
-            this.textBox2.TabIndex = 5;
+            this.txtQuaPaginas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuaPaginas.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.txtQuaPaginas.Location = new System.Drawing.Point(13, 206);
+            this.txtQuaPaginas.MaxLength = 1000;
+            this.txtQuaPaginas.Name = "txtQuaPaginas";
+            this.txtQuaPaginas.Size = new System.Drawing.Size(290, 26);
+            this.txtQuaPaginas.TabIndex = 5;
             // 
             // label5
             // 
@@ -125,11 +126,11 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Genero";
             // 
-            // comboBox1
+            // comboGenero
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboGenero.FormattingEnabled = true;
+            this.comboGenero.Items.AddRange(new object[] {
             "Terro",
             "Romance",
             "Ficção Cientifica",
@@ -137,11 +138,12 @@
             "Comédia",
             "Ficção",
             "Anime",
-            "Auto Ajuda"});
-            this.comboBox1.Location = new System.Drawing.Point(12, 258);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
-            this.comboBox1.TabIndex = 9;
+            "Auto Ajuda",
+            "Aventura"});
+            this.comboGenero.Location = new System.Drawing.Point(12, 258);
+            this.comboGenero.Name = "comboGenero";
+            this.comboGenero.Size = new System.Drawing.Size(121, 28);
+            this.comboGenero.TabIndex = 9;
             // 
             // label6
             // 
@@ -153,13 +155,13 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Autor";
             // 
-            // textBox3
+            // txtAutor
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(13, 312);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(290, 26);
-            this.textBox3.TabIndex = 10;
+            this.txtAutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAutor.Location = new System.Drawing.Point(13, 312);
+            this.txtAutor.Name = "txtAutor";
+            this.txtAutor.Size = new System.Drawing.Size(290, 26);
+            this.txtAutor.TabIndex = 10;
             // 
             // label7
             // 
@@ -167,17 +169,17 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(12, 350);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(154, 20);
+            this.label7.Size = new System.Drawing.Size(163, 20);
             this.label7.TabIndex = 13;
-            this.label7.Text = "Quantidade Livros";
+            this.label7.Text = "Quantidades Livros";
             // 
-            // textBox4
+            // txtQuaLivros
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(13, 373);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(290, 26);
-            this.textBox4.TabIndex = 12;
+            this.txtQuaLivros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuaLivros.Location = new System.Drawing.Point(13, 373);
+            this.txtQuaLivros.Name = "txtQuaLivros";
+            this.txtQuaLivros.Size = new System.Drawing.Size(290, 26);
+            this.txtQuaLivros.TabIndex = 12;
             // 
             // btnCadastrarLivro
             // 
@@ -188,6 +190,7 @@
             this.btnCadastrarLivro.TabIndex = 14;
             this.btnCadastrarLivro.Text = "Cadastrar";
             this.btnCadastrarLivro.UseVisualStyleBackColor = true;
+            this.btnCadastrarLivro.Click += new System.EventHandler(this.btnCadastrarLivro_Click);
             // 
             // dataGridView1
             // 
@@ -198,9 +201,9 @@
             this.Quantidade_livro,
             this.preco,
             this.Editora});
-            this.dataGridView1.Location = new System.Drawing.Point(347, 9);
+            this.dataGridView1.Location = new System.Drawing.Point(347, 47);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(441, 682);
+            this.dataGridView1.Size = new System.Drawing.Size(441, 644);
             this.dataGridView1.TabIndex = 15;
             // 
             // Nome
@@ -231,25 +234,15 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(127, 20);
             this.label8.TabIndex = 17;
-            this.label8.Text = "Preco Unidade";
+            this.label8.Text = "Preço Unidade";
             // 
-            // textBox5
+            // txtPreco
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(13, 434);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(290, 26);
-            this.textBox5.TabIndex = 16;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(12, 47);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(71, 16);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "N Registro";
+            this.txtPreco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPreco.Location = new System.Drawing.Point(13, 434);
+            this.txtPreco.Name = "txtPreco";
+            this.txtPreco.Size = new System.Drawing.Size(290, 26);
+            this.txtPreco.TabIndex = 16;
             // 
             // btnMostraLivros
             // 
@@ -261,33 +254,57 @@
             this.btnMostraLivros.Text = "Exibir";
             this.btnMostraLivros.UseVisualStyleBackColor = true;
             // 
+            // labelNome
+            // 
+            this.labelNome.AutoSize = true;
+            this.labelNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNome.Location = new System.Drawing.Point(13, 47);
+            this.labelNome.Name = "labelNome";
+            this.labelNome.Size = new System.Drawing.Size(44, 16);
+            this.labelNome.TabIndex = 20;
+            this.labelNome.Text = "Nome\r\n";
+            // 
+            // labelVoltar
+            // 
+            this.labelVoltar.AutoSize = true;
+            this.labelVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelVoltar.Location = new System.Drawing.Point(720, 9);
+            this.labelVoltar.Name = "labelVoltar";
+            this.labelVoltar.Size = new System.Drawing.Size(57, 24);
+            this.labelVoltar.TabIndex = 21;
+            this.labelVoltar.Text = "Volta";
+            this.labelVoltar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelVoltar.Click += new System.EventHandler(this.labelVoltar_Click);
+            // 
             // Funcionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 761);
+            this.Controls.Add(this.labelVoltar);
+            this.Controls.Add(this.labelNome);
             this.Controls.Add(this.btnMostraLivros);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtPreco);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnCadastrarLivro);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtQuaLivros);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtAutor);
+            this.Controls.Add(this.comboGenero);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtQuaPaginas);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtEditora);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNomeLivro);
             this.Controls.Add(this.label1);
             this.Name = "Funcionario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Funcionario";
+            this.Load += new System.EventHandler(this.Funcionario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -297,18 +314,18 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNomeLivro;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtEditora;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtQuaPaginas;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboGenero;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtAutor;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtQuaLivros;
         private System.Windows.Forms.Button btnCadastrarLivro;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
@@ -316,8 +333,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn preco;
         private System.Windows.Forms.DataGridViewTextBoxColumn Editora;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtPreco;
         private System.Windows.Forms.Button btnMostraLivros;
+        private System.Windows.Forms.Label labelNome;
+        private System.Windows.Forms.Label labelVoltar;
     }
 }
